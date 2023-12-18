@@ -1,0 +1,9 @@
+python training_dataprep.py --dir_path '' --txt_source 'napsi_training_label' --img_source 'napsi_training_image'
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/leukonychia.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name leukonychia --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/pitting.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name pitting --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/redspot.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name redspot --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/crumbling.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name crumbling --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/hyperkeratosis.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name hyperkeratosis --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/onycholysis.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name onycholysis --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/oilspot.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name oilspot --hyp data/hyp.scratch.tiny.yaml
+ python train.py --epochs 1000 --workers 4 --device 0 --batch-size 32 --data data/splinter.yaml --img 640 640 --cfg cfg/training/yolov7-nail-tiny.yaml --weights 'yolov7-tiny.pt' --name splinter --hyp data/hyp.scratch.tiny.yaml
